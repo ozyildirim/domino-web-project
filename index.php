@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>HMS</title>
+    <title>Domino Med</title>
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
     <link rel="stylesheet" type="text/css" href="style1.css">
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
@@ -53,7 +53,7 @@
         <div class="container">
 
             <a class="navbar-brand js-scroll-trigger" href="#" style="margin-top: 10px;margin-left:-65px;font-family: 'IBM Plex Sans', sans-serif;">
-                <h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp GLOBAL HOSPITALS</h4>
+                <h4><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp DOMINO MEDS</h4>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -100,45 +100,53 @@
                         <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Doctor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Receptionist</a>
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#admin" role="tab" aria-controls="admin" aria-selected="false">Admin</a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
+                 
+
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         <h3 class="register-heading">Login as Patient</h3>
                         
-                            <div class="row register-form">
-                                <form class="form-group" method="POST" action="func.php">
-                                    <div class="row" style="margin-top: 10%">
-                                        <div class="col-md-4"><label>Email-ID: </label></div>
-                                        <div class="col-md-8"><input type="text" name="email" class="form-control" placeholder="enter email ID" required /></div><br><br>
-                                        <div class="col-md-4" style="margin-top: 8%"><label>Password: </label></div>
-                                        <div class="col-md-8" style="margin-top: 8%"><input type="password" class="form-control" name="password2" placeholder="enter password" required /></div><br><br><br>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-4" style="padding-left: 160px;margin-top: 10%">
-                                            <center><input type="submit" id="inputbtn" name="patsub" value="Login" class="btn btn-primary"></center>
+                            <form method="post" action="func.php">
+                                <div class="row register-form">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="email">E-mail</label>
+                                            <input type="text" class="form-control" placeholder="Enter E-mail *" name="email" required />
                                         </div>
-                                        <!--  <div class="col-md-8" style="margin-top: 10%">
-                    <a href="index.php" class="btn btn-primary">Back</a></div> -->
                                     </div>
-                                </form>
-                            </div>
-                        
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="password2">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password *" name="password2" required />
+                                        </div>
+
+                                        <input type="submit" class="btnRegister" name="patsub" value="Login" />
+                                    </div>
+
+                                </div>
+                            </form>
+                       
                     </div>
+
 
 
                     <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <h3 class="register-heading">Login as Doctor</h3>
                         <form method="post" action="func1.php">
                             <div class="row register-form">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
+                                    <label for="username3">Username</label>
                                         <input type="text" class="form-control" placeholder="User Name *" name="username3" onkeydown="return alphaOnly(event);" required />
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
+                                    <label for="password3">Password</label>
                                         <input type="password" class="form-control" placeholder="Password *" name="password3" required />
                                     </div>
 
@@ -153,16 +161,18 @@
                         <h3 class="register-heading">Login as Admin</h3>
                         <form method="post" action="func3.php">
                             <div class="row register-form">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="User Name *" name="username1" onkeydown="return alphaOnly(event);" required />
+                                    <label for="username1">Username</label>
+                                        <input type="text" class="form-control" placeholder="User Name *" name="username1" required />
                                     </div>
 
 
 
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="form-group">
+                                    <label for="password2">Password</label>
                                         <input type="password" class="form-control" placeholder="Password *" name="password2" required />
                                     </div>
 

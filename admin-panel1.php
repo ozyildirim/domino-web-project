@@ -53,7 +53,7 @@ if(isset($_POST['docsub1']))
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> Global Hospital </a>
+  <a class="navbar-brand" href="#"><i class="fa fa-user-plus" aria-hidden="true"></i> DOMINO MED </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -127,7 +127,7 @@ if(isset($_POST['docsub1']))
   </style>
   <body style="padding-top:50px;">
    <div class="container-fluid" style="margin-top:50px;">
-    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME RECEPTIONIST </h3>
+    <h3 style = "margin-left: 40%; padding-bottom: 20px;font-family: 'IBM Plex Sans', sans-serif;"> WELCOME ADMIN </h3>
     <div class="row">
   <div class="col-md-4" style="max-width:25%;margin-top: 3%;">
     <div class="list-group" id="list-tab" role="tablist">
@@ -498,7 +498,7 @@ if(isset($_POST['docsub1']))
         <form class="form-group" method="post" action="admin-panel1.php">
           <div class="row">
                   <div class="col-md-4"><label>Doctor Name:</label></div>
-                  <div class="col-md-8"><input type="text" class="form-control" name="doctor" onkeydown="return alphaOnly(event);" required></div><br><br>
+                  <div class="col-md-8"><input type="text" class="form-control" name="doctor" required></div><br><br>
                   <div class="col-md-4"><label>Specialization:</label></div>
                   <div class="col-md-8">
                    <select name="special" class="form-control" id="special" required="required">

@@ -141,7 +141,7 @@
                                 <div class="col-md-12">
                                     <div class="form-group">
                                     <label for="username3">Username</label>
-                                        <input type="text" class="form-control" placeholder="User Name *" name="username3" onkeydown="return alphaOnly(event);" required />
+                                        <input type="text" class="form-control" placeholder="User Name *" name="username3" required />
                                     </div>
                                 </div>
                                 <div class="col-md-12">
